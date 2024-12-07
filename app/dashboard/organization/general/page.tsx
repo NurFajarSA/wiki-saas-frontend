@@ -9,6 +9,7 @@ export default async function GeneralSettings() {
     id: session!.user.org_id,
   })
 
+  console.log(session);
   console.log(org);
 
   console.log("Environment Variables:", {
