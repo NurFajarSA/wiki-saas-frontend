@@ -24,10 +24,10 @@ export default async function GeneralSettings() {
     APP_BASE_URL: process.env.APP_BASE_URL || "not set",
     CUSTOM_CLAIMS_NAMESPACE: process.env.CUSTOM_CLAIMS_NAMESPACE || "not set",
     AUTH0_BASE_URL: process.env.AUTH0_BASE_URL || "not set",
-    AUTH0_CLIENT_SECRET: process.env.AUTH0_CLIENT_SECRET ? "***hidden***" : "not set",
-    AUTH0_MANAGEMENT_CLIENT_SECRET: process.env.AUTH0_MANAGEMENT_CLIENT_SECRET ? "***hidden***" : "not set",
-    SESSION_ENCRYPTION_SECRET: process.env.SESSION_ENCRYPTION_SECRET ? "***hidden***" : "not set",
-    AUTH0_SECRET: process.env.AUTH0_SECRET ? "***hidden***" : "not set",
+    AUTH0_CLIENT_SECRET: process.env.AUTH0_CLIENT_SECRET || "not set",
+    AUTH0_MANAGEMENT_CLIENT_SECRET: process.env.AUTH0_MANAGEMENT_CLIENT_SECRET || "not set",
+    SESSION_ENCRYPTION_SECRET: process.env.SESSION_ENCRYPTION_SECRET || "not set",
+    AUTH0_SECRET: process.env.AUTH0_SECRET || "not set",
   });
 
   return (
