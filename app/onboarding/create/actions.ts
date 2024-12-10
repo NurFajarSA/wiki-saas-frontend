@@ -59,6 +59,7 @@ export async function createOrganization(formData: FormData) {
       },
       body: JSON.stringify({
         name: organizationName,
+        org_id: organization.id,
       }),
     })
   } catch (error) {

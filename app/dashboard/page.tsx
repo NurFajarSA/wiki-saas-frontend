@@ -8,6 +8,20 @@ import { appClient } from "@/lib/auth0"
 export default async function DashboardHome() {
   const session = await appClient.getSession();
   console.log(session);
+  const { org_id } = session.user;
+
+  const getUrl = async (org_id: string) => {
+    const response = await fetch(process.env.SAAS_BASE_URL + "/wiki/" + org_id, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    return response.json();
+  };
+
+  const { url } = await getUrl(org_id);
+  
   return (
     <div className="flex flex-1 flex-grow flex-col gap-4 lg:gap-6">
       <div className="flex flex-1 items-center justify-center rounded-3xl border bg-field shadow-sm">
@@ -24,7 +38,7 @@ export default async function DashboardHome() {
             Untuk mulai menggunakan WikiJs, silakan klik tombol di bawah ini.
           </p>
           <div className="mt-8">
-            <Link href="/dashboard/organization/general" className="w-full">
+            <Link className="w-full" href={url??"/"}>
               <Button className="w-full">
                 WikiJs Dashboard
                 <ArrowRightIcon className="ml-2 size-4" />
