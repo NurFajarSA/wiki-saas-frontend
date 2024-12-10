@@ -51,6 +51,16 @@ export async function createOrganization(formData: FormData) {
         roles: [process.env.AUTH0_ADMIN_ROLE_ID],
       }
     )
+
+    await fetch(`${process.env.SAAS_BASE_URL}/deploy`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: organizationName,
+      }),
+    })
   } catch (error) {
     console.error("failed to create an organization", error)
     return {
