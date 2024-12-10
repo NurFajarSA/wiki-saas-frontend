@@ -3,6 +3,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons"
 
 import { Button } from "@/components/ui/button"
 
+import { appClient } from "@/lib/auth0"
 
 export default async function DashboardHome() {
   const session = await appClient.getSession();
