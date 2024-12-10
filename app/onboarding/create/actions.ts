@@ -58,7 +58,7 @@ export async function createOrganization(formData: FormData) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        name: organizationName,
+        name: slugify(organizationName),
         org_id: organization.id,
       }),
     })
