@@ -31,7 +31,7 @@ fake-production-url.com:443 {
 NOTE: you have to use superuser to edit the hosts file
 Example: `sudo vi /etc/hosts` or `sudo code /etc/hosts`)
 ```shell
-# SaaStart
+# WikiSaas
 127.0.0.1 fake-production-url.com
 ```
 6. In a new terminal window, navigate to the repository folder and use the `caddy run` command to start the process.
@@ -65,7 +65,7 @@ Amongst the overall output, you should be able to see the following lines includ
 
 This section guides you through setting up an email platform for easy local testing and development.
 
-When simulating a production environment on your personal development environment, it can also be helpful to test email delivery and manage transactional emails without actually sending emails to real users. This can be achieved with an email platform of your choice, with this guide focusing on [Mailtrap.io](https://mailtrap.io) as one example. These services can act as a “fake” SMTP email provider, collecting and displaying the email messages it was supposed to send without actually delivering them. This allows you to test email functionality while creating organizations and inviting users while using any email addresses you want, even those that aren't real. This makes a solution like this ideal for troubleshooting and testing SaaStart.
+When simulating a production environment on your personal development environment, it can also be helpful to test email delivery and manage transactional emails without actually sending emails to real users. This can be achieved with an email platform of your choice, with this guide focusing on [Mailtrap.io](https://mailtrap.io) as one example. These services can act as a “fake” SMTP email provider, collecting and displaying the email messages it was supposed to send without actually delivering them. This allows you to test email functionality while creating organizations and inviting users while using any email addresses you want, even those that aren't real. This makes a solution like this ideal for troubleshooting and testing WikiSaas.
 
 > [!IMPORTANT]
 > You must use an email domain that actually exists and has an MX record for testing. For example, using `acme.com` will work, but `acmeairlines.net` will not, as it lacks a valid MX record.

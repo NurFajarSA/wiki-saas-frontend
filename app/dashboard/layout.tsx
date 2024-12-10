@@ -73,7 +73,7 @@ export default async function DashboardLayout({
             <Auth0Logo className="h-6 w-6" />
 
             <div className="font-mono font-semibold">
-              <Link href="/">SaaStart</Link>
+              <Link href="/">WikiSaas</Link>
             </div>
 
             <div>

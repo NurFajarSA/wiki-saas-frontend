@@ -1,4 +1,4 @@
-# **SaaStart** from Auth0 by Okta
+# **WikiSaas** from Auth0 by Okta
 
 A secure and high-performance starting point for building modern B2B SaaS web applications.
 
@@ -173,7 +173,7 @@ By clicking through the application's front-end, you can explore the management 
 Each user that creates an account from scratch will be prompted to enter an organization name as part of their sign-up flow. Once an organization is created, users with admin roles can invite additional users who will automatically be added to the organization.
 
 ### User Management
-Invite additional users, change users' roles (and thus what they have permission to do in the application), and delete users. You'll notice as you perform these operations in SaaStart, you're changing the user database and organizations in your Auth0 tenant.
+Invite additional users, change users' roles (and thus what they have permission to do in the application), and delete users. You'll notice as you perform these operations in WikiSaas, you're changing the user database and organizations in your Auth0 tenant.
 
 ### Connections
 Use the SSO tab in the settings section to connect an external IDP (eg, Okta WIC, Google Workforce, Azure AD, etc) via SAML or OIDC. This allows your business customers to set up their own Single Sign On connections right in your application. You can also optionally enable SCIM provisioning using the same connections.

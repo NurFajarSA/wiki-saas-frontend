@@ -11,13 +11,13 @@ export default async function Create() {
         <div className="absolute inset-0 bg-zinc-900" />
         <div className="relative z-20 flex items-center text-lg font-medium">
           <Auth0Logo className="mr-2 size-8" />
-          <span className="font-mono font-medium">SaaStart</span>
+          <span className="font-mono font-medium">WikiSaas</span>
         </div>
         <div className="relative z-20 mt-auto">
           <blockquote className="space-y-2">
             <div className="space-y-1">
               <p className="text-lg">
-                SaaStart is a reference B2B SaaS application built using Next.js
+                WikiSaas is a reference B2B SaaS application built using Next.js
                 and Auth0 by Okta.
               </p>
               <p className="text-lg">
